@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário - Página 1</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+
+  <div class="forms-container">
+    <form action="data_forms.php" method="post" autocomplete="off" autocapitalize="off">
+      <div class="forms-header" id="forms-header">
+        <h2 class="forms-title">Formulário - Página 1</h2>
+      </div>
+
+      <div class="social">
+          <a href="https://www.github.com/jaozzy" target="_blank"><img src="img/github.png" alt="git" class="github-img"></a>
+          <a href="mailto:servicecontact.joao@gmail.com?subject=Problema%20Com%20O%20Formulário" target="_blank"> <img src="img/gmail.png" alt="mail" class="email-img"></a>
+      </div>
+
+      <div class="obs">
+        <p>* Em caso de algum problema técnico no formulário, entre em contato no email acima.</p>
+      </div>
+
+      <div class="quest">
+
+        <div class="p-turma">
+          <label for="turma">1. Qual a sua turma?</label>
+          <select id="turma" name="turma" required>
+            <option value="" disabled selected hidden>Selecione a sua turma</option>
+            
+            <optgroup label="Ensino Fundamental">
+              <option value="9A">9A</option>
+              <option value="9B">9B</option>
+              <option value="9C">9C</option>
+              <option value="9D">9D</option>
+              <option value="9E">9E</option>
+            </optgroup>
+
+            <optgroup label="Ensino Médio">
+              <option value="101">101</option>
+              <option value="102">102</option>
+              <option value="103">103</option>
+              <option value="201">201</option>
+              <option value="202">202</option>
+              <option value="301">301</option>
+              <option value="302">302</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="p-idade">
+          <p>2. Qual é a sua idade?</p>
+          <label>
+            <input type="radio" name="idade" value="13-14">
+            13 - 14
+          </label>
+          <label>
+            <input type="radio" name="idade" value="15-16">
+            15 - 16
+          </label>
+          <label>
+            <input type="radio" name="idade" value="17-18">
+            17 - 18
+          </label>
+        </div>
+
+        <div class="p-gen">
+          <p>3. Qual seu gênero?</p>
+          <label>
+            <input type="radio" name="gen" value="M">
+            Masculino
+          </label>
+          <label>
+            <input type="radio" name="gen" value="F">
+            Feminino
+          </label>
+        </div>
+
+        <div class="p-q1">
+          <p>4.Você já ouviu falar em Segurança de Dados?</p>
+          <label>
+            <input type="radio" name="q1" value="a">
+            Sim, mas não sei nada sobre.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            Sim, e tenho algum conhecimento sobre o assunto.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            Não.
+          </label>
+        </div>
+
+        <div class="p-q2">
+          <p>5. Você conhece alguém próximo que já teve seus dados pessoais vazados na internet?</p>
+          <label>
+            <input type="radio" name="q2" value="a">
+            Sim, um amigo.
+          </label>
+          <label>
+            <input type="radio" name="q2" value="b">
+            Sim, um parente.
+          </label>
+          <label>
+            <input type="radio" name="q2" value="c">
+            Não.
+          </label>
+        </div>
+
+        <div class="p-q3">
+          <p>6.Alguma vez você teve seus dados pessoais vazados na internet?</p>
+          <label>
+            <input type="radio" name="q3" value="a">
+            Sim, uma vez.
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            Sim, mais de uma vez.
+          </label>
+          <label>
+            <input type="radio" name="q3" va3ue="c">
+            Não.
+          </label>
+        </div>
+
+        <div class="pages">
+
+          <div class="next-page">
+            <a href="index2.html" class="next-page-button">Próxima Página</a>
+          </div>  
+
+        </div>
+
+      </div>
+    </form>
+
+    <script>
+      var answers = sessionStorage.getItem('formAnswersPage1');
+      if (answers) {
+        var form = document.querySelector('form');
+        var inputs = form.querySelectorAll('input, select');
+        answers = JSON.parse(answers);
+        inputs.forEach(function(input) {
+          var name = input.name;
+          if (answers.hasOwnProperty(name)) {
+            input.value = answers[name];
+          }
+        });
+      }
+  
+      var nextPageButton = document.querySelector('.next-page-button');
+      nextPageButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        var form = document.querySelector('form');
+        var formData = new FormData(form);
+        var data = {};
+        for (var pair of formData.entries()) {
+          data[pair[0]] = pair[1];
+        }
+        sessionStorage.setItem('formAnswersPage1', JSON.stringify(data));
+        window.location.href = nextPageButton.href;
+      });
+    </script>
+
+  </div>  
+</body>
+</html>

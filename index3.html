@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Página 3</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <div class="forms-container">
+        <form action="data_forms.php" method="post" autocomplete="off" autocapitalize="off">
+            <div class="forms-header" id="forms-header">
+                <h2 class="forms-title">Formulário - Página 3</h2>
+            </div>
+
+            <div class="social">
+                <a href="https://www.github.com/jaozzy" target="_blank"><img src="img/github.png" alt="git" class="github-img"></a>
+                <a href="mailto:servicecontact.joao@gmail.com?subject=Problema%20Com%20O%20Formulário" target="_blank"> <img src="img/gmail.png" alt="mail" class="email-img"></a>
+            </div>
+
+            <div class="obs">
+                <p>* Em caso de algum problema técnico no formulário, entre em contato no email acima.</p>
+            </div>
+
+            <div class="p-q10">
+                <p>13.Você acredita que o governo deveria ter um papel mais ativo na proteção dos dados dos cidadãos na internet?</p>
+                <label>
+                <input type="radio" name="q10" value="a">
+                Sim, acredito que deveria ser uma responsabilidade maior do governo proteger os dados da população na internet.
+                </label>
+                <label>
+                <input type="radio" name="q10" value="b">
+                Não, acredito que a segurança dos dados da população na internet deve ser somente de responsabilidade das empresas
+                </label>
+            </div>
+
+            <div class="p-q11">
+                <p>14.Você utiliza uma rede Wi-Fi pública, como de shoppings, restaurantes ou lojas com frequência? Sabe quais precauções tomar ao se conectar a essas redes e os riscos dessa conexão?</p>
+                <label>
+                <input type="radio" name="q11" value="a">
+                Sim, utilizo redes públicas de internet, conheço os riscos dessa utilização e me protejo de maneira adequada.
+                </label>
+                <label>
+                <input type="radio" name="q11" value="b">
+                Sim, utilizo redes públicas de internet, mas desconheço os riscos dessa utilização e não me protejo de maneira adequada.
+                </label>
+                <label>
+                <input type="radio" name="q11" value="c">
+                Não utilizo redes de públicas de internet por saber dos riscos da utilização.
+                </label>
+                <label>
+                <input type="radio" name="q11" value="d">
+                Não utilizo redes públicas de internet, embora desconheça os riscos dessa utilização.
+                </label>
+            </div>
+
+            <div class="p-q12">
+                <p>15.Você costuma compartilhar senhas de suas contas online com outras pessoas?</p>
+                <label>
+                <input type="radio" name="q12" value="a">
+                Sim, costumo compartilhar senhas de minhas contas, como Netflix com outras pessoas, como parentes e/ou amigos.
+                </label>
+                <label>
+                <input type="radio" name="q12" value="b">
+                Não costumo compartilhar senhas de minhas contas, como Netflix com outras pessoas, como parentes e/ou amigos.
+                </label>
+            </div>
+
+            <div class="p-q13">
+                <p>16.Você sabe o que é engenharia social? Já recebeu tentativas de golpes ou manipulação online?</p>
+                <label>
+                <input type="radio" name="q13" value="a">
+                Sim, conheço o conceito de engenharia social e já fui vítima de golpes ou de tentativas.
+                </label>
+                <label>
+                <input type="radio" name="q13" value="b">
+                Sim, conheço o conceito de engenharia social, embora nunca tenha sido vítima de golpes ou de tentativas.
+                </label>
+                <label>
+                <input type="radio" name="q13" value="c">
+                Não.
+                </label>
+                <label>
+                <input type="radio" name="q13" value="d">
+                Não, não conheço o conceito de engenharia social, porém já fui vítima de golpes ou de tentativas.
+                </label>
+                <label>
+                <input type="radio" name="q13" value="e">
+                Não, não conheço o conceito de engenharia social e nunca fui vítima de golpes ou de tentativas.
+                </label>
+            </div>
+
+            <div class="p-q14">
+                <p>17.Você utiliza senhas fortes, com combinação de letras, números e caracteres especiais?</p>
+                <label>
+                <input type="radio" name="q14" value="a">
+                Sim, costumo utilizar senhas complexas, com caracteres variados.
+                </label>
+                <label>
+                <input type="radio" name="q14" value="b">
+                Não, costumo utilizar senhas simples, para que eu lembre delas mais facilmente.
+                </label>
+            </div>
+
+            <div class="p-q15">
+                <p>18.Você acredita que a educação sobre segurança de dados na internet deveria ser incluída nos currículos escolares?</p>
+                <label>
+                <input type="radio" name="q15" value="a">
+                Sim, acredito que a abordagem do tema em instituições de ensino seja importante.
+                </label>
+                <label>
+                <input type="radio" name="q15" value="b">
+                Não, acredito que o tema não tenha relação com a grade escolar.
+                </label>
+            </div>
+
+            <div class="consent">
+                <input type="checkbox" name="consent" id="consent" required><br>
+                <label for="consent">Declaro que concordo com o uso dos dados fornecidos no formulário para fins de pesquisa e análise de dados. Entendo que esses dados serão coletados e utilizados exclusivamente para esse propósito e asseguro que as respostas fornecidas são verdadeiras.</label>
+            </div>
+
+            <div class="pages">
+
+                <div class="previous-page">
+                    <a href="index2.html" class="back-page-button">Página Anterior</a>
+                </div>
+
+                <input type="submit" value="Enviar">
+
+            </div>
+
+        </form>
+
+        <script>
+            // recuperar respostas da sessão (se existir)
+            var answers = sessionStorage.getItem('formAnswersPage3');
+            if (answers) {
+              // preencher os campos do formulário com as respostas
+              var form = document.querySelector('form');
+              var inputs = form.querySelectorAll('input, select');
+              answers = JSON.parse(answers);
+              inputs.forEach(function(input) {
+                var name = input.name;
+                if (answers.hasOwnProperty(name)) {
+                  input.value = answers[name];
+                }
+              });
+            }
+        
+            // salvar respostas na sessão ao avançar para a próxima página
+            var nextPageButton = document.querySelector('.next-page-button');
+            nextPageButton.addEventListener('click', function(event) {
+              event.preventDefault();
+              var form = document.querySelector('form');
+              var formData = new FormData(form);
+              var data = {};
+              for (var pair of formData.entries()) {
+                data[pair[0]] = pair[1];
+              }
+              sessionStorage.setItem('formAnswersPage3', JSON.stringify(data));
+              window.location.href = nextPageButton.href;
+            });
+        </script>
+
+    </div>
+</body>
+</html>

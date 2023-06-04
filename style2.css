@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to top left, green, yellow);
+}
+
+.forms-container {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 23px;
+    background-color: #F6F3FA;
+    justify-content: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+}
+
+.forms-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.p-q4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q4 label {
+    display: flex;
+    align-items: center;
+}
+
+.p-q5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q5 label {
+    display: flex;
+    align-items: center;
+}
+
+.p-q6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q6 label {
+    display: flex;
+    align-items: center;
+}
+
+.p-q7 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q7 label {
+    display: flex;
+    align-items: center;
+}
+
+.p-q8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q8 label {
+    display: flex;
+    align-items: center;
+}
+
+.p-q9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-q9 label {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.obs {
+    gap: 0;
+    padding: 0;
+    color: red;
+    font-size: 11px;
+    text-align: center;
+}
+
+.github-img {
+    width: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.github-img:hover {
+    scale: 1.2;
+}
+
+.email-img {
+    width: 35px;
+    padding-top: 2px;
+    padding: 0;
+}
+
+.email-img:hover {
+    scale: 1.2;
+}
+
+.pages  {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.next-page {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.next-page:hover {
+    scale: 1.1;
+}
+
+.previous-page {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-page:hover {
+    scale: 1.1;       
+}
+
+.next-page-button {
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+  }
+
+.back-page-button {
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+    font-size: 17px;
+  }

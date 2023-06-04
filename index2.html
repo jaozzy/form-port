@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Página 2</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div class="forms-container">
+        <form action="data_forms.php" method="post" autocomplete="off" autocapitalize="off">
+            <div class="forms-header" id="forms-header">
+                <h2 class="forms-title">Formulário - Página 2</h2>
+            </div>
+
+            <div class="social">
+                <a href="https://www.github.com/jaozzy" target="_blank"><img src="img/github.png" alt="git" class="github-img"></a>
+                <a href="mailto:servicecontact.joao@gmail.com?subject=Problema%20Com%20O%20Formulário" target="_blank"> <img src="img/gmail.png" alt="mail" class="email-img"></a>
+            </div>
+
+            <div class="obs">
+                <p>* Em caso de algum problema técnico no formulário, entre em contato no email acima.</p>
+            </div>
+  
+            <div class="p-q4">
+                <p>7. Você se sente seguro em fornecer seus dados pessoais em sites pela internet? Como em cadastramentos de plataformas, serviços e etc.</p>
+                <label>
+                <input type="radio" name="q4" value="a">
+                Sim, mas somente com empresas grandes, como o Facebook, Instagram, Netflix, etc.
+                </label>
+                <label>
+                <input type="radio" name="q4" value="b">
+                Sim, mas somente com empresas pequenas, como jornais ou mercados locais.
+                </label>
+                <label>
+                <input type="radio" name="q4" value="c">
+                Sim, independentemente do tamanho da empresa.
+                </label>
+                <label>
+                <input type="radio" name="q4" value="d">
+                Não, não confio na segurança dos meus dados na internet, independentemente da empresa que eu os esteja fornecendo.
+                </label>
+            </div>
+
+            <div class="p-q5">
+                <p>8.Você lê os termos de uso e/ou as políticas de privacidade de uma empresa ao efetuar um cadastro?</p>
+                <label>
+                <input type="radio" name="q5" value="a">
+                Sim, sempre leio os termos de uso e as políticas de privacidade de todas as plataformas que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="b">
+                Sim, sempre leio os termos de uso de qualquer plataforma que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="c">
+                Sim, sempre leio as políticas de privacidade de qualquer plataforma que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="d">
+                Em alguns casos, leio os termos de uso e as políticas de privacidade das plataformas que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="e">
+                Em alguns casos, leio os termos de uso das plataformas que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="f">
+                Em alguns casos, leio as políticas de privacidade das plataformas que eu me cadastro.
+                </label>
+                <label>
+                <input type="radio" name="q5" value="g">
+                Não leio os termos de uso e nem as políticas de privacidade de nenhuma plataforma que eu me cadastro.
+                </label>
+            </div>
+
+            <div class="p-q6">
+                <p>9.Você utiliza senhas diferentes para cada conta online que possui?</p>
+                <label>
+                <input type="radio" name="q6" value="a">
+                Sim, utilizo diferentes senhas para determinadas plataformas que eu possuo conta.
+                </label>
+                <label>
+                <input type="radio" name="q6" value="b">
+                Não, utilizo a mesma senha para todas as minhas contas.
+                </label>
+            </div>
+
+            <div class="p-q7">
+                <p>10.Você acredita que as empresas estão fazendo o suficiente para proteger os dados dos usuários na internet?</p>
+                <label>
+                <input type="radio" name="q7" value="a">
+                Sim, acredito que as empresas fazem um bom trabalho quanto a segurança dos dados de seus usuários.
+                </label>
+                <label>
+                <input type="radio" name="q7" value="b">
+                Não, acredito que as empresas não fazem um bom trabalho quanto a segurança dos dados de seus usuários.
+                </label>
+            </div>
+
+            <div class="p-q8">
+                <p>11.Você sabe o que é phishing? Já recebeu algum e-mail e/ou link suspeito pedindo seus dados pessoais ou que supostamente fosse de alguma plataforma que você utiliza?</p>
+                <label>
+                <input type="radio" name="q8" value="a">
+                Sim, já recebi algum email e/ou link suspeito.
+                </label>
+                <label>
+                <input type="radio" name="q8" value="b">
+                Não, nunca recebi nenhum email e/ou link suspeito.
+                </label>
+            </div>
+
+            <div class="p-q9">
+                <p>12.Você sabe o que é autenticação de dois fatores? Já utiliza esse método de segurança?</p>
+                <label>
+                <input type="radio" name="q9" value="a">
+                Sim, conheço, mas não utilizo esse sistema.
+                </label>
+                <label>
+                <input type="radio" name="q9" value="b">
+                Sim, conheço e utilizo esse sistema.
+                </label>
+                <label>
+                <input type="radio" name="q9" value="c">
+                Não conheço e nem utilizo esse sistema.
+                </label>
+            </div>
+
+            <div class="pages">
+
+                <div class="previous-page">
+                    <a href="index1.html" class="back-page-button">Página Anterior</a>
+                </div>
+
+                <div class="next-page">
+                    <a href="index3.html" class="next-page-button">Próxima Página</a>
+                </div>
+
+            </div>
+        </form>
+
+        <script>
+            // recuperar respostas da sessão (se existir)
+            var answers = sessionStorage.getItem('formAnswersPage2');
+            if (answers) {
+              // preencher os campos do formulário com as respostas
+              var form = document.querySelector('form');
+              var inputs = form.querySelectorAll('input, select');
+              answers = JSON.parse(answers);
+              inputs.forEach(function(input) {
+                var name = input.name;
+                if (answers.hasOwnProperty(name)) {
+                  input.value = answers[name];
+                }
+              });
+            }
+        
+            // salvar respostas na sessão ao avançar para a próxima página
+            var nextPageButton = document.querySelector('.next-page-button');
+            nextPageButton.addEventListener('click', function(event) {
+              event.preventDefault();
+              var form = document.querySelector('form');
+              var formData = new FormData(form);
+              var data = {};
+              for (var pair of formData.entries()) {
+                data[pair[0]] = pair[1];
+              }
+              sessionStorage.setItem('formAnswersPage2', JSON.stringify(data));
+              window.location.href = nextPageButton.href;
+            });
+        </script>
+
+    </div>
+</body>
+</html>
